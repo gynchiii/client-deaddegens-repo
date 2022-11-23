@@ -10,47 +10,34 @@
         </q-btn>
         <q-toolbar-title class="textNeue q-mt-md text-bold text-white q-ml-xs">
         </q-toolbar-title>
-        <div style="margin-top: 1em; margin-right: 1em" class=" q-mt-sm q-pt-md q-gutter-none">
+        <div style="margin-top: 1em; margin-right: -0.5em" class=" q-mt-sm q-pt-md q-gutter-none">
           <q-btn to="/roadmap" style="margin-right: -1.5em " class="textFjala qbtnn text-subtitle text-bold" flat
             color="white" text-color="white" label="Mission">
           </q-btn>
-          <q-btn to="/team" style="margin-right: -1.5em " class="textFjala qbtnn text-subtitle text-bold" flat
+          <q-btn to="/team" style="margin-right: 1em " class="textFjala qbtnn text-subtitle text-bold" flat
             color="white" text-color="white" label="Team">
           </q-btn>
-          <!-- <q-btn target="_blank" href="https://deadsouls-staking.web.app/" style="margin-right: -1.2em" class="textFjala qbtnn text-subtitle text-bold" flat
-            color="white" text-color="white" label="STAKING">
+          <!-- <q-btn target="_blank" href="https://deadsouls-staking.web.app/" style="margin-right: -1.2em"
+            class="textFjala qbtnn text-subtitle text-bold" flat color="white" text-color="white" label="STAKING">
           </q-btn>
-          <q-btn target="_blank" href="https://raffle-dsd.vercel.app/" class="textFjala qbtnn text-subtitle text-bold" flat color="white" text-color="white"
-            label="RAFFLES">
+          <q-btn target="_blank" href="https://raffle-dsd.vercel.app/" class="textFjala qbtnn text-subtitle text-bold"
+            flat color="white" text-color="white" label="RAFFLES">
           </q-btn> -->
         </div>
         <div style="margin-right: 10em; margin-top: 0.6em " class="q-gutter-xs">
-          <q-btn target="_blank" href="https://discord.gg/" round flat style="margin-right: 0.3em" size="0.50em"
-            class="bg-transparent button-social q-px-md" color="white">
-            <q-icon size="2.5em" name="fa-brands fa-discord"></q-icon>
-          </q-btn>
-          <q-btn style="margin-right: -0.2em" target="_blank" href="https://twitter.com/_Dead_Degens" round flat
-            size="0.50em" class="bg-transparent button-social" color="white">
+          <q-btn target="_blank" href="https://twitter.com/_Dead_Degens" round flat size="0.50em"
+            class="bg-transparent button-social" color="white">
             <q-icon size="2.5em" name="fa-brands fa-twitter"></q-icon>
+          </q-btn>
+          <q-btn target="_blank" href="https://discord.gg/" round flat style="margin-right: 0.3em"
+            size="0.50em" class="bg-transparent button-social q-px-md" color="white">
+            <q-icon size="2.5em" name="fa-brands fa-discord"></q-icon>
           </q-btn>
           <q-btn target="_blank" href="https://magiceden.io/" round flat style="margin-top: 1.4em"
             size="0.35em" class="bg-transparent button-social" color="black">
             <q-avatar size="7.5em">
               <img src="https://cdn.discordapp.com/attachments/971074716406284289/985484686908350484/wwwwwwwwwww.png" />
             </q-avatar>
-          </q-btn>
-          <q-btn style="margin-top: -0.4em; margin-left: -1.5em;" onclick="document.getElementById('player').play()"
-            v-if="play == 1" @click="() => { play = 2; }" round flat size="0.7em" class="bg-transparent button-social"
-            color="white">
-            <q-icon name="play_arrow" size="2.4em" />
-          </q-btn>
-          <audio id="player" style="opacity: 0.5;"
-            src="https://cdn.discordapp.com/attachments/971074716406284289/987255919291273287/Dead_Souls.mp3">
-          </audio>
-          <q-btn style="margin-top: -0.4em; margin-left: -1.5em;" onclick="document.getElementById('player').pause()"
-            v-if="play == 2" @click="() => { play = 1; }" round flat size="0.7em" class="bg-transparent button-social"
-            color="white">
-            <q-icon name="pause" size="2.4em" />
           </q-btn>
         </div>
 
@@ -72,12 +59,6 @@
           <q-btn to="/team" style="margin-right: -1.5em " class="textFjala qbtnn text-subtitle text-bold" flat
             color="black" text-color="white" label="Team">
           </q-btn>
-          <q-btn target="_blank" href="https://deadsouls-staking.web.app/" style="margin-right: -1.5em " class="textFjala qbtnn text-subtitle text-bold" flat
-            color="black" text-color="white" label="STAKING">
-          </q-btn>
-          <q-btn target="_blank" href="https://raffle-dsd.vercel.app/" class="textFjala qbtnn text-subtitle text-bold" flat color="black" text-color="white"
-            label="RAFFLES">
-          </q-btn>
         </div>
         <div style="margin-left: -0.5em; margin-top: 0.45em" class="q-gutter-xs button-div-lg">
           <q-btn target="_blank" href="https://twitter.com/_Dead_Degens" round flat size="0.50em"
@@ -91,19 +72,6 @@
             <q-avatar size="8em">
               <img src="https://cdn.discordapp.com/attachments/971074716406284289/985484686908350484/wwwwwwwwwww.png" />
             </q-avatar>
-          </q-btn>
-          <q-btn style="margin-top: -0.4em; margin-left: -1.3em;" onclick="document.getElementById('player').play()"
-            v-if="play == 1" @click="() => { play = 2; }" round flat size="0.7em" class="bg-transparent button-social"
-            color="white">
-            <q-icon name="play_arrow" size="2.4em" />
-          </q-btn>
-          <audio id="player" style="opacity: 0.5;"
-            src="https://cdn.discordapp.com/attachments/971074716406284289/987255919291273287/Dead_Souls.mp3">
-          </audio>
-          <q-btn style="margin-top: -0.4em; margin-left: -1.3em;" onclick="document.getElementById('player').pause()"
-            v-if="play == 2" @click="() => { play = 1; }" round flat size="0.7em" class="bg-transparent button-social"
-            color="white">
-            <q-icon name="pause" size="2.4em" />
           </q-btn>
         </div>
 
@@ -124,12 +92,6 @@
           <q-btn to="/team" style="margin-right: -1.5em " class="textFjala qbtnn text-subtitle text-bold" flat
             color="black" text-color="white" label="Team">
           </q-btn>
-          <q-btn target="_blank" href="https://deadsouls-staking.web.app/" style="margin-right: -1.5em " class="textFjala qbtnn text-subtitle text-bold" flat
-            color="black" text-color="white" label="STAKING">
-          </q-btn>
-          <q-btn target="_blank" href="https://raffle-dsd.vercel.app/" class="textFjala qbtnn text-subtitle text-bold" flat color="black" text-color="white"
-            label="RAFFLES">
-          </q-btn>
         </div>
         <div style="margin-left: 0.4em ; margin-right: 5em; margin-top: 0.5em" class="q-gutter-xs button-div">
           <q-btn target="_blank" href="https://twitter.com/_Dead_Degens" round flat size="0.50em"
@@ -143,19 +105,6 @@
             <q-avatar size="11em">
               <img src="https://cdn.discordapp.com/attachments/971074716406284289/985484686908350484/wwwwwwwwwww.png" />
             </q-avatar>
-          </q-btn>
-          <q-btn style="margin-top: -0.4em; margin-left: -1.3em;" onclick="document.getElementById('player').play()"
-            v-if="play == 1" @click="() => { play = 2; }" round flat size="0.7em" class="bg-transparent button-social"
-            color="white">
-            <q-icon name="play_arrow" size="2.4em" />
-          </q-btn>
-          <audio id="player" style="opacity: 0.5;"
-            src="https://cdn.discordapp.com/attachments/971074716406284289/987255919291273287/Dead_Souls.mp3">
-          </audio>
-          <q-btn style="margin-top: -0.4em; margin-left: -1.3em;" onclick="document.getElementById('player').pause()"
-            v-if="play == 2" @click="() => { play = 1; }" round flat size="0.7em" class="bg-transparent button-social"
-            color="white">
-            <q-icon name="pause" size="2.4em" />
           </q-btn>
         </div>
 
@@ -173,7 +122,7 @@
         <q-toolbar-title class="textNeue q-mt-md text-bold text-white q-ml-xs">
         </q-toolbar-title>
 
-        <q-btn-dropdown dense class="textFjala bg-purple  text-subtitle lt-md"
+        <q-btn-dropdown dense class="textFjala bg-purple text-subtitle lt-md"
           style="margin-top: 2em; margin-right: 2em; width: 45px;" text-color="black" color="white"
           dropdown-icon="menu">
           <q-list class="">
@@ -186,38 +135,6 @@
             <q-item to="/team" clickable v-close-popup @click="onItemClick">
               <q-item-section>
                 <span class="textFjala">TEAM</span>
-              </q-item-section>
-            </q-item>
-
-            <q-item target="_blank" href="https://raffle-dsd.vercel.app/" clickable v-close-popup @click="onItemClick">
-              <q-item-section >
-                <span class="textFjala">RAFFLE</span>
-              </q-item-section>
-            </q-item>
-
-            <q-item target="_blank" href="https://deadsouls-staking.web.app/"  clickable v-close-popup @click="onItemClick">
-              <q-item-section >
-                <span class="textFjala">STAKING</span>
-              </q-item-section>
-            </q-item>
-            <q-separator />
-            <q-item target="_blank" href="https://discord.gg/" clickable v-close-popup @click="onItemClick">
-              <q-item-section>
-                <span class="textFjala">DISCORD</span>
-              </q-item-section>
-            </q-item>
-
-            <q-item target="_blank" href="https://twitter.com/_Dead_Degens" clickable v-close-popup
-              @click="onItemClick">
-              <q-item-section>
-                <span class="textFjala">TWITTER</span>
-              </q-item-section>
-            </q-item>
-
-            <q-item target="_blank" href="https://magiceden.io/" clickable v-close-popup
-              @click="onItemClick">
-              <q-item-section>
-                <span class="textFjala">SECONDARY</span>
               </q-item-section>
             </q-item>
 
